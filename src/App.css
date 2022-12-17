@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "MyWebFont";
+  src: url("https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2")
+    format("woff2");
+  /* url('myfont.woff') format('woff'); */
+}
+
+body {
+  font-family: "MyWebFont", Fallback, sans-serif;
+  color: white;
+}
