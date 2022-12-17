@@ -12,7 +12,7 @@ export default function MenuButton() {
     <>
       <ul className="flex p-3">
         {items.map((item) => (
-          <Link to={item.page}>
+          <Link to={item.page} key={item.label}>
             <li className="mr-16">{item.label}</li>
           </Link>
         ))}

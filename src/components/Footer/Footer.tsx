@@ -29,8 +29,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-slate-900 w-full flex">
-        <div className="w-1/4 p-24">
+      <div className="bg-slate-900 w-9/12 flex">
+        <div className="w-1/3 p-24">
           <img src={logo} width="100px" className="pb-4" />
           <p className="pb-2">
             Movflx Online the relase etras thats sheets continig passage.
@@ -53,7 +53,7 @@ export default function Footer() {
           <p className="pb-2">Post 2</p>
           <p className="pb-2">Post 3</p>
         </div>
-        <div className="w-1/4 p-24">
+        <div className="w-1/4 p-20">
           <p className="text-xl font-semibold pb-4">Follow Us</p>
           <Group position="left">
             <Button className="bg-blue-700">
