@@ -3,7 +3,7 @@ import { getFilms } from "../../services/filmServices";
 import { useQuery } from "react-query";
 import { IconClockHour3, IconThumbUp, IconDeviceTvOld } from "@tabler/icons";
 import serviceImg from "./services_img.jpg";
-
+import liveImg from "./live_img.png";
 export default function Home() {
   const { data } = useQuery("getFilms", () => getFilms());
   const dataFilms = data?.data;
@@ -99,6 +99,34 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-white w-full text-slate-900 flex justify-center">
+        <div className="w-8/12 mt-24 flex justify-between mb-24">
+          <div className="w-1/3 space-y-4">
+            <p className="text-yellow-300">ONLINE STREAMING</p>
+            <p className="text-4xl font-black">
+              Live Movie & TV Shows For Friends & Family
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consecetur adipiscing elseddo eiusmod
+              There are many variations of passages of lorem Ipsum available,
+              but the majority have suffered alteration.
+            </p>
+            <div className="flex">
+              <p className="text-6xl font-black text-red-600 mr-10">HD 4K</p>
+              <div>
+                <p className="text-3xl font-black">20K+</p>
+                <p className="font-black">Active Customer</p>
+              </div>
+            </div>
+            <button className="bg-yellow-300 text-xl font-bold pt-3 pb-3 pr-5 pl-5 rounded-full">
+              WATCH NOW
+            </button>
+          </div>
+          <div className="w-1/2">
+            <img src={liveImg} />
           </div>
         </div>
       </div>

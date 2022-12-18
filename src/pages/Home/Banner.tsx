@@ -4,7 +4,7 @@ export default function Banner() {
   return (
     <>
       <div className="w-full relative z-10">
-        <img className="w-full" src={banner} />
+        <img className="w-full" src={banner} width="100%" />
         <div className="w-1/3 absolute top-40 left-60">
           <p className="text-3xl font-extrabold text-yellow-300 mb-5">Movflx</p>
           <p className="text-6xl font-black mb-5">
