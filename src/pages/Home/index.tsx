@@ -1,7 +1,9 @@
 import Banner from "./Banner";
 import { getFilms } from "../../services/filmServices";
 import { useQuery } from "react-query";
-import { IconClockHour3, IconThumbUp } from "@tabler/icons";
+import { IconClockHour3, IconThumbUp, IconDeviceTvOld } from "@tabler/icons";
+import serviceImg from "./services_img.jpg";
+
 export default function Home() {
   const { data } = useQuery("getFilms", () => getFilms());
   const dataFilms = data?.data;
@@ -56,6 +58,49 @@ export default function Home() {
               </div>
             </div>
           ))}
+      </div>
+      <div className="bg-stone-800 p-20 w-full flex justify-center">
+        <div className="w-9/12 flex justify-between">
+          <img src={serviceImg} />
+          <div className="ml-40 space-y-8">
+            <p>OUR SERVICES</p>
+            <p className="text-yellow-300 text-4xl font-extrabold">
+              Download Your Shows Watch Offline.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consecetur adipiscing elseddo eiusmod
+              tempor.There are many variations of passages of lorem Ipsum
+              available, but the majority have suffered alteration in some
+              injected humour.
+            </p>
+            <div>
+              <div className="flex border-b-2 border-yellow-300 pb-10">
+                <div className="p-4 border-yellow-300 border-2 mr-4 rounded-full h-fit">
+                  <IconDeviceTvOld size={50} />
+                </div>
+                <div className="space-y-3">
+                  <p className="text-xl font-semibold">Enjoy on Your TV.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consecetur adipiscing elit, sed
+                    do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+              <div className="flex pt-10">
+                <div className="p-4 border-yellow-300 border-2 mr-4 rounded-full h-fit">
+                  <IconDeviceTvOld size={50} />
+                </div>
+                <div className="space-y-3">
+                  <p className="text-xl font-semibold">Watch Everywhere.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consecetur adipiscing elit, sed
+                    do eiusmod tempor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
